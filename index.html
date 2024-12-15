@@ -1,0 +1,562 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>Interior Design</title>
+  </head>
+  <body class="dark:bg-primary">
+    <header class="container px-2 py-5 mx-auto min-h-20">
+      <nav class="relative flex items-center justify-between">
+        <a href="#" class="block logo max-w-36 dark:invert"
+          ><img src="src/imgs/Logo.png" alt="logo"
+        /></a>
+        <div
+          class="absolute right-0 hidden transition-transform md:block md:static top-8"
+          id="navbar-default"
+        >
+          <ul
+            id="nav-links"
+            class="flex flex-col px-10 py-4 mt-4 bg-white border rounded-lg nav-links md:p-0 md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 dark:md:bg-primary border-secondary dark:md:text-secondary"
+          >
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </div>
+        <div>
+          <button
+            id="page-mode"
+            class="inline-flex items-center justify-center w-8 h-8 mr-5 rounded-md bg-[#f3f1f1] dark:bg-[#313131] focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800"
+          >
+            <svg
+              id="theme-toggle-dark-icon"
+              class="w-4 h-4"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 18 20"
+            >
+              <path
+                d="M17.8 13.75a1 1 0 0 0-.859-.5A7.488 7.488 0 0 1 10.52 2a1 1 0 0 0 0-.969A1.035 1.035 0 0 0 9.687.5h-.113a9.5 9.5 0 1 0 8.222 14.247 1 1 0 0 0 .004-.997Z"
+              ></path>
+            </svg>
+          </button>
+          <a
+            href="#"
+            class="px-4 py-2 mr-2 text-white transition rounded md:px-8 md:text-xl bg-primary hover:bg-secondary dark:bg-secondary"
+            >Sign Up
+          </a>
+          <button
+            type="button"
+            title="nav menu"
+            class="p-2 rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-gray-200"
+            id="nav-toggle"
+          >
+            <i
+              class="cursor-pointer fa-solid fa-bars fa-2xl text-primary dark:text-white"
+            ></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main class="mx-2">
+      <!-- Start Hero Section -->
+      <section class="container mx-auto mb-16">
+        <!-- Hero Container -->
+        <div class="hero md:gap-0 md:mt-16">
+          <!-- Hero top part -->
+          <div class="flex justify-between gap-4 mb-20 md:gap-0">
+            <div class="md:max-w-[45rem] text-center md:text-left">
+              <h1 class="mb-10 text-primary text-8xl dark:text-white">
+                Interior Design
+              </h1>
+              <p class="text-2xl text-secondary">
+                Step into a world where the art of Interior Design is
+                meticulously crafted to bring together timeless elegance and
+                cutting-edge modern Innovation, Allowing you to transform your
+                living spaces into the epitome of luxury and sophistication
+              </p>
+              <a
+                href="#"
+                class="block px-10 py-4 mx-auto mt-10 text-xl text-white transition rounded bg-primary hover:bg-secondary md:mt-20 w-fit md:mx-0 dark:bg-secondary"
+                >Start Project
+              </a>
+            </div>
+            <div
+              class="hero__img md:self-start min-w-80 max-w-[25rem] hidden md:block"
+            >
+              <img src="src/imgs/Image 1.png" alt="Image1" />
+            </div>
+          </div>
+          <!-- Hero bottom part (stats) -->
+          <div
+            class="flex flex-col items-center justify-between gap-20 lg:flex-row lg:items-start"
+          >
+            <!-- Stats -->
+            <div class="flex flex-wrap justify-center gap-4 md:10">
+              <p class="text-center text-secondary">
+                <span class="block mb-2 text-5xl md:text-6xl">400+</span>Project
+                Complete
+              </p>
+              <p class="text-center text-secondary">
+                <span class="block mb-2 text-5xl md:text-6xl">600+</span
+                >Satisfied Clients
+              </p>
+              <p class="text-center text-secondary">
+                <span class="block mb-2 text-5xl md:text-6xl">100+</span> Unique
+                Styles
+              </p>
+            </div>
+            <!-- Stats Img -->
+            <div
+              class="max-w-[25] lg:-translate-y-28 lg:-translate-x-20 relative before:absolute before:border-2 before:border-primary before:-top-6 before:-left-6 before:w-40 before:h-40 before:-z-10 before:rounded"
+            >
+              <img src="src/imgs/Image 2.png" alt="Image 2" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Hero Section -->
+      <!-- Start Services Section -->
+      <section class="container mx-auto mb-24">
+        <h2
+          class="text-4xl font-semibold text-primary pl-36 w-fit relative dark:text-white before:absolute before:left-0 before:top-1/2 before:w-1/3 before:h-0.5 before:bg-primary mb-10"
+        >
+          Our Services
+        </h2>
+        <!-- services cards -->
+        <div
+          class="flex flex-col flex-wrap gap-5 mx-auto text-center md:text-left md:flex-row md:justify-between"
+        >
+          <!-- card 1-->
+          <div
+            class="item flex flex-col md:flex-row gap-4 min-w-[21rem] md:max-w-[20rem] lg:max-w-[25rem] dark:border dark:border-secondary dark:p-4"
+          >
+            <!-- card img -->
+            <div class="mx-auto min-w-16 dark:invert">
+              <img
+                src="src/imgs/Lighting design icon.png"
+                alt="Interior design icon"
+              />
+            </div>
+            <!-- card description -->
+            <div>
+              <h3
+                class="mb-4 text-xl font-semibold text-primary dark:text-white"
+              >
+                Lighting Design
+              </h3>
+              <p class="text-secondary">
+                Achieve the perfect balance of ambient, task, and accent
+                lighting for a functional atmosphere
+              </p>
+            </div>
+          </div>
+          <!-- card 2-->
+          <div
+            class="item flex flex-col md:flex-row gap-4 min-w-[21rem] md:max-w-[20rem] lg:max-w-[25rem] dark:border dark:border-secondary dark:p-4"
+          >
+            <!-- card img -->
+            <div class="mx-auto min-w-16 dark:invert">
+              <img
+                src="src/imgs/Interior design icon.png"
+                alt="Interior design icon"
+              />
+            </div>
+            <!-- card description -->
+            <div>
+              <h3
+                class="mb-4 text-xl font-semibold text-primary dark:text-white"
+              >
+                Interior Design
+              </h3>
+              <p class="text-secondary">
+                Achieve the perfect balance of ambient, task, and accent
+                lighting for a functional atmosphere
+              </p>
+            </div>
+          </div>
+          <!-- card 3-->
+          <div
+            class="item flex flex-col md:flex-row gap-4 min-w-[21rem] md:max-w-[20rem] lg:max-w-[25rem] dark:border dark:border-secondary dark:p-4"
+          >
+            <!-- card img -->
+            <div class="mx-auto min-w-16 dark:invert">
+              <img
+                src="src/imgs/Outdoor design icon.png"
+                alt="Interior design icon"
+              />
+            </div>
+            <!-- card description -->
+            <div>
+              <h3
+                class="mb-4 text-xl font-semibold text-primary dark:text-white"
+              >
+                Outdoor Design
+              </h3>
+              <p class="text-secondary">
+                Achieve the perfect balance of ambient, task, and accent
+                lighting for a functional atmosphere
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Services Section -->
+      <!-- Start FAQs Section -->
+      <section class="container mx-auto mb-36">
+        <div
+          class="flex flex-col items-center gap-10 mb-20 lg:flex-row lg:items-start md:gap-20 xl:justify-center"
+        >
+          <!-- FAQs img -->
+          <div class="max-w-[35rem] rounded overflow-hidden">
+            <img src="src/imgs/Mask group.png" alt="Mask group" />
+          </div>
+          <!-- FAQs description -->
+          <div class="max-w-[36rem]">
+            <h2
+              class="text-primary text-3xl font-semibold md:text-5xl md:leading-[3.5rem] mb-5 md:mb-8 dark:text-white"
+            >
+              Designing Your Dream With Brilliance
+            </h2>
+            <p class="mb-5 text-lg md:text-2xl text-secondary">
+              Elevate your spaces with bespoke interior designs that reflect
+              your unique style and aspirations, crafted with precision and
+              brilliance for an unforgettable living experience
+            </p>
+            <div class="accrodation min-h-[12.5rem]">
+              <!-- Item 1 -->
+              <div class="mb-2">
+                <button class="w-full rounded shadow-md dark:bg-secondary">
+                  <div
+                    class="flex justify-between items-center text-primary dark:text-white transition-colors dark:hover:bg-[#333] hover:bg-[#eee] p-4 item-title"
+                  >
+                    <p class="font-semibold">Living Room Interior Design</p>
+                    <i class="fa-solid fa-plus-circle fa-xl" id="icon"></i>
+                  </div>
+                  <div
+                    class="overflow-hidden text-left transition-all content text-secondary dark:text-primary max-h-0"
+                  >
+                    <p class="p-4">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Cupiditate, non?
+                    </p>
+                  </div>
+                </button>
+              </div>
+              <!-- Item 2 -->
+              <div class="mb-2">
+                <button class="w-full rounded shadow-md dark:bg-secondary">
+                  <div
+                    class="flex justify-between items-center text-primary dark:text-white transition-colors dark:hover:bg-[#333] hover:bg-[#eee] p-4 item-title"
+                  >
+                    <p class="font-semibold">Living Room Interior Design</p>
+                    <i class="fa-solid fa-plus-circle fa-xl" id="icon"></i>
+                  </div>
+                  <div
+                    class="overflow-hidden text-left transition-all content text-secondary dark:text-primary max-h-0"
+                  >
+                    <p class="p-4">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Cupiditate, non?
+                    </p>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <a
+              href="#"
+              class="block px-10 py-4 mx-auto text-xl text-white transition rounded bg-primary hover:bg-secondary w-fit md:mx-0 dark:bg-secondary"
+              >Learn More
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- End FAQs Section -->
+      <!-- Start Design Section -->
+      <section class="container mx-auto mb-20">
+        <div
+          class="flex flex-col items-center gap-10 mb-20 lg:flex-row lg:items-start md:gap-20 xl:justify-center"
+        >
+          <!-- Design Description -->
+          <div class="max-w-[36rem] mx-auto md:-mx-0">
+            <!-- Heading -->
+            <h2
+              class="text-primary text-3xl font-semibold md:text-5xl md:leading-[3.5rem] mb-14 dark:text-white"
+            >
+              Designing Your Dream in Three Simple Steps
+            </h2>
+            <!-- Steps Cards -->
+            <div class="flex flex-col steps gap-14">
+              <!-- Step 1 -->
+              <div class="flex gap-5 step">
+                <div
+                  class="flex items-center self-start justify-center rounded-full img-wrapper bg-primary shrink-0 basis-14 h-14"
+                >
+                  <img src="src/imgs/Vector.png" alt="rocket" class="invert" />
+                </div>
+                <div>
+                  <h3 class="mb-2 text-2xl font-semibold text-primary">
+                    Start Project
+                  </h3>
+                  <p class="text-xl text-secondary">
+                    Embark on your design adventure by initiating your project.
+                    Share your vision and set the stage for a bespoke design
+                    experience
+                  </p>
+                </div>
+              </div>
+              <!-- Step 2 -->
+              <div class="flex gap-5 step">
+                <div
+                  class="flex items-center self-start justify-center rounded-full img-wrapper bg-primary shrink-0 basis-14 h-14"
+                >
+                  <img src="src/imgs/idea.png" alt="idea" class="invert" />
+                </div>
+                <div>
+                  <h3 class="mb-2 text-2xl font-semibold text-primary">
+                    Craft
+                  </h3>
+                  <p class="text-xl text-secondary">
+                    Collaborate closely to achieve design excellence refining
+                    your vision and crafting brilliance into every aspect of
+                    your space
+                  </p>
+                </div>
+              </div>
+              <!-- Step 3 -->
+              <div class="flex gap-5 step">
+                <div
+                  class="flex items-center self-start justify-center rounded-full img-wrapper bg-primary shrink-0 basis-14 h-14"
+                >
+                  <img src="src/imgs/check.png" alt="rocket" class="invert" />
+                </div>
+                <div>
+                  <h3 class="mb-2 text-2xl font-semibold text-primary">
+                    Execute
+                  </h3>
+                  <p class="text-xl text-secondary">
+                    Witness your vision becoming a reality as we execute the
+                    design plan with precision. Celebrate the joy of your newly
+                    transformed space
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Design img -->
+          <div class="max-w-[35rem] rounded overflow-hidden">
+            <img src="src/imgs/Image.png" alt="Image" />
+          </div>
+        </div>
+      </section>
+      <!-- End Design Section -->
+      <!-- Start Customers Section -->
+      <section class="container relative mx-auto mb-36">
+        <h2
+          class="text-primary text-left text-3xl font-semibold md:text-5xl md:leading-[3.5rem] mb-14 dark:text-white max-w-[30rem] ml-auto mr-10"
+        >
+          What Our Customers Say About Us
+        </h2>
+        <!-- Customer Img -->
+        <div class="absolute top-0 left-0 hidden lg:block max-w-[25rem]">
+          <img src="src/imgs/Mask group (1).png" alt="Mask group" />
+        </div>
+        <!-- Testimonials -->
+        <div class="flex flex-col-reverse gap-10 md:flex-row">
+          <!-- Testimonials Controls -->
+          <div class="flex self-center gap-5 mt-4 lg:self-end">
+            <button
+              class="bg-[#F1F1F1] w-14 h-14 flex justify-center items-center rounded transition-colors hover:bg-[#ccc]"
+            >
+              <i class="fa-solid fa-arrow-left text-[#464646] fa-lg"></i>
+            </button>
+            <button
+              class="bg-[#F1F1F1] w-14 h-14 flex justify-center items-center rounded transition-colors hover:bg-[#ccc]"
+            >
+              <i class="fa-solid fa-arrow-right text-[#464646] fa-lg"></i>
+            </button>
+          </div>
+          <!-- Testimonials Cards -->
+          <div
+            class="flex gap-8 overflow-x-auto md:gap-14 md:overflow-x-visible md:flex-col lg:flex-row"
+          >
+            <!-- Card 1 -->
+            <div
+              class="p-8 text-white rounded md:p-14 bg-primary min-w-[20rem] dark:border dark:border-secondary"
+            >
+              <i class="fa-solid fa-quote-left fa-2xl"></i>
+              <blockquote class="py-5 md:py-10">
+                <p class="text-lg md:text-2xl">
+                  Working with your design team was an absolute pleasure. The
+                  attention to detail and creativity exceeded my expectations.
+                  Thank you for making my home beautiful!
+                </p>
+              </blockquote>
+              <div class="flex items-center gap-3">
+                <div>
+                  <img src="src/imgs/Mask group (2).png" alt="person" />
+                </div>
+                <div>
+                  <h4 class="text-lg font-semibold md:text-2xl">
+                    Sophie Carter
+                  </h4>
+                  <span class="block text-secondary md:text-lg"
+                    >New York, USA</span
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div
+              class="p-8 text-white rounded md:p-14 bg-primary min-w-[20rem] dark:border dark:border-secondary"
+            >
+              <i class="fa-solid fa-quote-left fa-2xl"></i>
+              <blockquote class="py-5 md:py-10">
+                <p class="text-lg md:text-2xl">
+                  Working with your design team was an absolute pleasure. The
+                  attention to detail and creativity exceeded my expectations.
+                  Thank you for making my home beautiful!
+                </p>
+              </blockquote>
+              <div class="flex items-center gap-3">
+                <div>
+                  <img src="src/imgs/Mask group (2).png" alt="person" />
+                </div>
+                <div>
+                  <h4 class="text-lg font-semibold md:text-2xl">
+                    Sophie Carter
+                  </h4>
+                  <span class="block text-secondary md:text-lg"
+                    >New York, USA</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Customers Section -->
+      <!-- Start newsLetter Section -->
+      <section class="max-w-[40rem] mx-auto">
+        <h2
+          class="text-primary text-center text-3xl font-semibold md:text-5xl md:leading-[3.5rem] mb-10 dark:text-white"
+        >
+          Subscribe to Our Newsletter for Design Insights
+        </h2>
+        <p
+          class="mb-10 text-center text-secondary max-w-[35rem] mx-auto md:text-xl"
+        >
+          Be the first to discover trends, inspirations, and special offers as
+          we bring the world of design directly to your inbox
+        </p>
+        <form action="">
+          <div class="relative p-2 overflow-hidden bg-white rounded shadow-md">
+            <i
+              class="absolute z-10 -translate-y-1/2 left-2 top-1/2 fa-solid fas fa-envelope text-secondary fa-lg"
+            ></i>
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              class="relative w-full h-12 px-10 py-4 sm:text-lg focus:outline-0 text-secondary"
+            />
+            <button
+              type="submit"
+              class="absolute w-24 text-white transition -translate-y-1/2 rounded sm:text-xl sm:w-40 top-1/2 right-2 h-3/4 bg-primary hover:bg-secondary dark:bg-secondary"
+            >
+              Subscribe
+            </button>
+          </div>
+        </form>
+      </section>
+      <!-- End newsLetter Section -->
+    </main>
+    <footer class="-mt-8 bg-primary dark:border-t-2 dark:border-secondary">
+      <div
+        class="container mx-auto flex flex-col md:flex-wrap md:flex-row items-center py-36 *:md:basis-1/2 *:lg:basis-1/4 gap-y-10 px-3"
+      >
+        <div>
+          <div class="logo">
+            <img src="src/imgs/Logo.png" alt="Logo" class="invert" />
+          </div>
+          <p class="py-8 text-[#D1D1D1]">
+            VivaDecor your premier destination for luxury and modern interior
+            design
+          </p>
+          <!-- Social Media -->
+          <div class="flex gap-5 text-white">
+            <a href="#" class="p-2 rounded bg-[#313131]"
+              ><i class="fab fa-facebook-f fa-xl fa-fw"></i
+            ></a>
+            <a href="#" class="p-2 rounded bg-[#313131]"
+              ><i class="fab fa-twitter fa-xl fa-fw"></i
+            ></a>
+            <a href="#" class="p-2 rounded bg-[#313131]"
+              ><i class="fab fa-instagram fa-xl fa-fw"></i
+            ></a>
+            <a href="#" class="p-2 rounded bg-[#313131]"
+              ><i class="fab fa-linkedin fa-xl fa-fw"></i
+            ></a>
+          </div>
+        </div>
+        <div class="text-center md:text-right">
+          <h4 class="text-xl font-semibold text-white">Our Services</h4>
+          <ul class="flex flex-col gap-5 mt-8 text-lg text-[#D1D1D1]">
+            <li>
+              <a href="#">Interior design</a>
+            </li>
+            <li>
+              <a href="#">Interior design</a>
+            </li>
+            <li>
+              <a href="#">Interior design</a>
+            </li>
+            <li>
+              <a href="#">Interior design</a>
+            </li>
+          </ul>
+        </div>
+        <div class="text-center md:text-right">
+          <h4 class="text-xl font-semibold text-white">Our Services</h4>
+          <ul class="flex flex-col gap-5 mt-8 text-lg text-[#D1D1D1]">
+            <li>
+              <a href="#">Interior design</a>
+            </li>
+            <li>
+              <a href="#">Interior design</a>
+            </li>
+            <li>
+              <a href="#">Interior design</a>
+            </li>
+            <li>
+              <a href="#">Interior design</a>
+            </li>
+          </ul>
+        </div>
+        <div class="self-start mx-auto text-center md:text-right">
+          <h4 class="mb-8 text-xl font-semibold text-white">Our Services</h4>
+          <a
+            href="mailto:info@vivadecor.com"
+            class="block font-semibold text-lg text-[#D1D1D1] mb-5"
+            >info@vivadecor.com</a
+          >
+          <p class="text-lg text-[#D1D1D1] max-w-40 ml-auto">
+            Design Avenue Cityville, CA 90210 United States
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
